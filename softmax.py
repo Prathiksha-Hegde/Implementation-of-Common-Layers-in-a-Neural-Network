@@ -1,7 +1,6 @@
 # import the necessary libraries
 import numpy as np
 
-
 class SoftMaxLayer(object):
     def __init__(self):
   
@@ -46,8 +45,6 @@ class SoftMaxLayer(object):
             dlx[i] = np.dot(y_grad[i], dyx).reshape((1, self.y.shape[1]))
         return dlx
         
-
-
 
     def update_param(self, lr):
 	# no learning for softmax layer
